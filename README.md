@@ -33,4 +33,6 @@ alias codex-glm='docker run --rm -it -v "$(pwd):/app" -v ~/.codex:/root/.codex -
 
 ## 🔗 Links
 - [Docker Image Tags](https://github.com/aahl/codex/pkgs/container/codex/versions?filters[version_type]=tagged)
+- https://zread.ai/aahl/codex
+- https://linux.do/t/topic/974745
 - https://www.bigmodel.cn/invite?icode=EwilDKx13%2FhyODIyL%2BKabHHEaazDlIZGj9HxftzTbt4%3D
