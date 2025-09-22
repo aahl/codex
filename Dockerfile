@@ -6,7 +6,6 @@ ENV HOME=/root
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN set -eux; \
-    sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources; \
     apt update; \
     apt install -y --no-install-recommends bash curl git gnupg nodejs npm; \
     mkdir -p /root/npm-cache; \
