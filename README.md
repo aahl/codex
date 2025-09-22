@@ -13,8 +13,8 @@ docker run --rm -it -v "$(pwd):/app" -v ~/.codex:/root/.codex ghcr.io/aahl/codex
 # vim ~/.codex/config.toml
 [model_providers.glm]
 name = "GLM Coding Plan"
-base_url = "https://open.bigmodel.cn/api/coding/paas/v4"
 env_key = "GLM_AUTH_TOKEN"
+base_url = "https://open.bigmodel.cn/api/coding/paas/v4"
 
 [profiles.glm45]
 model = "glm-4.5"
@@ -28,7 +28,7 @@ model_provider = "glm"
 ```bash
 # vim ~/.bashrc
 export GLM_AUTH_TOKEN=your_glm_token
-alias codex-glm='docker run --rm -it -v "$(pwd):/app" -v ~/.codex:/root/.codex -e GLM_AUTH_TOKEN="$GLM_AUTH_TOKEN" -e APT_MIRROR=mirrors.ustc.edu.cn -e NPM_REGISTRY=https://registry.npmmirror.com ghcr.nju.edu.cn/aahl/codex --profile glm45flash'
+alias codex-glm='docker run --rm -it -v "$(pwd):/app" -v ~/.codex:/root/.codex -e GLM_AUTH_TOKEN="$GLM_AUTH_TOKEN" -e APT_MIRROR=mirrors.ustc.edu.cn -e NPM_REGISTRY=https://registry.npmmirror.com ghcr.nju.edu.cn/aahl/codex codex --profile glm45flash'
 ```
 
 ## 🔗 Links
